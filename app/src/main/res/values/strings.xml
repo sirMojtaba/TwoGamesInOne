@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">MiniGames</string>
+    <string name="winner_call"> \ won the game !</string>
+    <string name="game_tic_tac_tow">Game : Tic Tac Tow</string>
+    <string name="draw">draw !</string>
+    <string name="point">-</string>
+    <string name="play_again">tap here to play again .</string>
+    <string name="what_the_hell">%s%s%d</string>
+    <string name="what_the_hell_2">%s%s</string>
+    <string name="thats_so_weired">%d%s%s</string>
+    <string name="thats_so_weired_2">%s%s</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="game_four_in_a_row">Game : Four In A Row</string>
+    <string name="player_1">Player 1</string>
+    <string name="player_2">Player 2</string>
+    <string name="name">Name</string>
+    <string name="show_points">\  Show Points</string>
+    <string name="save">Save</string>
+    <string name="ss"><![CDATA[\ \  —> \ \ ]]></string>
+    <string name="dd"><![CDATA[\ \  <— \ \ ]]></string>
+    <string name="changes_saved">Changes saved !</string>
+    <string name="player">player %d</string>
+    <string name="tic_tac_toe">Tic Tac Toe</string>
+    <string name="settings">settings</string>
+    <string name="_4_in_a_row">4 in a row</string>
+</resources>
