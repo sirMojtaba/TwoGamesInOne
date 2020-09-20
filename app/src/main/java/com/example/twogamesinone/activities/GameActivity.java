@@ -1,8 +1,10 @@
-package com.example.twogamesinone;
+package com.example.twogamesinone.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.twogamesinone.R;
 
 public class GameActivity extends AppCompatActivity {
 
