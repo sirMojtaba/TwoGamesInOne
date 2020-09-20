@@ -16,7 +16,7 @@ import android.widget.Toast;
 import com.example.twogamesinone.R;
 import com.example.twogamesinone.enums.FourInARowStates;
 import com.example.twogamesinone.model.FourInARow;
-import com.maktab.minigames.model.Settings;
+//import com.maktab.minigames.model.Settings;
 
 public class FourInRowFragment extends Fragment {
 
