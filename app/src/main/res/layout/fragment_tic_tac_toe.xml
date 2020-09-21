@@ -33,7 +33,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textAlignment="center"
-                android:textColor="#00CDFF"
+                android:textColor="#F44336"
                 android:textSize="24sp"
                 tools:text="first" />
 
@@ -50,7 +50,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textAlignment="center"
-                android:textColor="#00CDFF"
+                android:textColor="#009688"
                 android:textSize="24sp"
                 tools:text="second" />
         </LinearLayout>

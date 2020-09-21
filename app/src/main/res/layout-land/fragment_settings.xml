@@ -3,15 +3,15 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="32dp"
+    android:layout_height="match_parent"
     android:background="@drawable/settings_gradient"
+    android:gravity="center"
     android:orientation="vertical"
     tools:context=".controller.fragments.SettingsFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <TextView
@@ -21,8 +21,8 @@
             android:layout_weight="1"
             android:text="@string/player_1"
             android:textAlignment="center"
-            android:textColor="#00FF37"
-            android:textSize="24sp" />
+            android:textColor="#F44336"
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/textView"
@@ -31,14 +31,14 @@
             android:layout_weight="1"
             android:text="@string/player_2"
             android:textAlignment="center"
-            android:textColor="#00FF37"
-            android:textSize="24sp" />
+            android:textColor="#009688"
+            android:textSize="18sp" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="24dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:orientation="horizontal">
 
         <EditText
@@ -47,11 +47,10 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:autofillHints=""
-            android:ems="10"
             android:hint="@string/player_1"
             android:inputType="textPersonName"
             android:textAlignment="center"
-            android:textSize="24sp" />
+            android:textSize="18sp" />
 
         <EditText
             android:id="@+id/edit_text_second_player"
@@ -59,30 +58,30 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:autofillHints=""
-            android:ems="10"
             android:hint="@string/player_2"
             android:inputType="textPersonName"
             android:textAlignment="center"
-            android:textSize="24sp" />
+            android:textSize="18sp" />
     </LinearLayout>
 
     <Switch
         android:id="@+id/switch_point_view"
-        android:layout_width="200dp"
-        android:layout_height="0dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="48dp"
-        android:layout_weight="1"
+        android:layout_marginTop="16dp"
         android:text="@string/show_points"
-        android:textColor="#0AD1F4"
-        android:textSize="24sp" />
+        android:textColor="#2196F3"
+        android:textSize="18sp" />
 
     <Button
         android:id="@+id/button_save"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|center_horizontal"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/for_in_row_gradient"
         android:text="@string/save"
-        android:textSize="20sp" />
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
 </LinearLayout>
