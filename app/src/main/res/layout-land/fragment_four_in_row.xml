@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/for_in_row_gradient">
+    android:background="@drawable/for_in_row_gradient"
+    android:gravity="center"
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/textView_four_in_one"
@@ -13,20 +15,17 @@
         android:layout_marginTop="16dp"
         android:text="@string/game_four_in_a_row"
         android:textAlignment="center"
-        android:textSize="21sp"
-        tools:text=" " />
+        android:textSize="21sp" />
 
     <TextView
         android:id="@+id/textView_second_score_f"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="top|end"
-        android:layout_marginTop="104dp"
         android:layout_marginEnd="16dp"
         android:gravity="center"
         android:textColor="#00CDFF"
-        android:textSize="24sp"
-        tools:text="second" />
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/textView_first_score_f"
@@ -34,23 +33,19 @@
         android:layout_height="wrap_content"
         android:layout_gravity="top|start"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="104dp"
         android:gravity="center"
         android:textColor="#00CDFF"
-        android:textSize="24sp"
-        tools:text="first" />
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/textView_try_again_f"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|center"
-        android:layout_marginBottom="16dp"
         android:gravity="center"
         android:shadowColor="#6F778F"
         android:textColor="#00FF37"
-        android:textSize="18sp"
-        tools:text="try again" />
+        android:textSize="18sp" />
 
     <TableLayout
         android:layout_width="wrap_content"
@@ -258,4 +253,4 @@
 
     </TableLayout>
 
-</FrameLayout>
+</LinearLayout>

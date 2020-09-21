@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/for_in_row_gradient"
-    tools:context=".fragments.FourInRowFragment">
+    android:orientation="vertical"
+    tools:context=".controller.fragments.FourInRowFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,7 +16,7 @@
             android:id="@+id/textView_four_in_one"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="8dp"
             android:text="@string/game_four_in_a_row"
             android:textAlignment="center"
             android:textSize="24sp"
@@ -30,7 +31,6 @@
                 android:id="@+id/textView_first_score_f"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
                 android:layout_weight="1"
                 android:textAlignment="center"
                 android:textColor="#00CDFF"
@@ -41,7 +41,6 @@
                 android:id="@+id/textView7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
                 android:text="@string/point"
                 android:textSize="36sp" />
 
@@ -49,7 +48,6 @@
                 android:id="@+id/textView_second_score_f"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
                 android:layout_weight="1"
                 android:textAlignment="center"
                 android:textColor="#00CDFF"
@@ -269,7 +267,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|center_horizontal"
-        android:layout_marginBottom="56dp"
         android:orientation="vertical">
 
         <TextView
@@ -283,4 +280,4 @@
             tools:text="try again" />
 
     </LinearLayout>
-</FrameLayout>
+</LinearLayout>

@@ -1,4 +1,4 @@
-package com.example.twogamesinone.fragments;
+package com.example.twogamesinone.controller.fragments;
 
 import android.graphics.Color;
 import android.os.Bundle;
@@ -11,12 +11,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.twogamesinone.R;
 import com.example.twogamesinone.enums.FourInARowStates;
 import com.example.twogamesinone.model.FourInARow;
 import com.example.twogamesinone.model.Settings;
+import com.google.android.material.snackbar.Snackbar;
 
 public class FourInRowFragment extends Fragment {
 
@@ -172,8 +172,8 @@ public class FourInRowFragment extends Fragment {
         else if (mFourInARow.isFinished() == FourInARowStates.RED)
             winner = mNames[1];
         if (mFourInARow.isFinished() != FourInARowStates.EMPTY) {
-            Toast.makeText(getActivity(), (String.format("%s%s", winner
-                    , getString(R.string.winner_call))), Toast.LENGTH_LONG).show();
+            Snackbar.make(getView(), (String.format("%s%s", winner
+                    , getString(R.string.winner_call))), Snackbar.LENGTH_LONG).show();
             whoIsTheWinner(mFourInARow.isFinished());
             mTurnIndex = 0;
             buttonsEnabled(false);
@@ -184,7 +184,7 @@ public class FourInRowFragment extends Fragment {
 
     private void checkIsFull() {
         if (mFourInARow.isFull() && mFourInARow.isFinished() == FourInARowStates.EMPTY) {
-            Toast.makeText(getActivity(), getString(R.string.draw), Toast.LENGTH_LONG).show();
+            Snackbar.make(getView(), getString(R.string.draw), Snackbar.LENGTH_LONG).show();
             buttonsEnabled(false);
             mShowFinishedDetails = true;
             mTurnIndex = 0;

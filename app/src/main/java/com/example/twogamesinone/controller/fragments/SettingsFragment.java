@@ -1,4 +1,4 @@
-package com.example.twogamesinone.fragments;
+package com.example.twogamesinone.controller.fragments;
 
 import android.os.Bundle;
 
@@ -11,10 +11,10 @@ import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.Switch;
-import android.widget.Toast;
 
 import com.example.twogamesinone.R;
 import com.example.twogamesinone.model.Settings;
+import com.google.android.material.snackbar.Snackbar;
 
 public class SettingsFragment extends Fragment {
 
@@ -69,7 +69,7 @@ public class SettingsFragment extends Fragment {
                         names[i] = String.format(getString(R.string.player), i + 1);
                 }
                 mSettings.setNames(names);
-                Toast.makeText(getActivity(), R.string.changes_saved, Toast.LENGTH_LONG).show();
+                Snackbar.make(getView(), R.string.changes_saved, Snackbar.LENGTH_LONG).show();
             }
         });
     }

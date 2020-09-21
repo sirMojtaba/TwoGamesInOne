@@ -5,13 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activities.GameActivity">
+    tools:context=".controller.activities.GameActivity">
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/for_in_row_gradient"
         android:orientation="horizontal">
+
         <Button
             android:id="@+id/button_tic_tac_toe"
             style="@android:style/Widget.Holo.Button"
@@ -21,12 +23,12 @@
             android:text="@string/tic_tac_toe" />
 
         <ImageButton
-            style="@style/Widget.AppCompat.ImageButton"
             android:id="@+id/button_edit"
+            style="@style/Widget.AppCompat.ImageButton"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:srcCompat="@android:drawable/ic_menu_edit"
-            android:contentDescription="@string/settings" />
+            android:layout_height="match_parent"
+            android:contentDescription="@string/settings"
+            app:srcCompat="@drawable/ic_setting" />
 
         <Button
             android:id="@+id/button_four_in_row"

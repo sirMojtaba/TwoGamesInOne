@@ -1,4 +1,4 @@
-package com.example.twogamesinone.fragments;
+package com.example.twogamesinone.controller.fragments;
 
 import android.graphics.Color;
 import android.os.Bundle;
@@ -7,7 +7,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -16,6 +15,7 @@ import com.example.twogamesinone.R;
 import com.example.twogamesinone.enums.TicTacToeStates;
 import com.example.twogamesinone.model.Settings;
 import com.example.twogamesinone.model.TicTacToe;
+import com.google.android.material.snackbar.Snackbar;
 
 public class TicTacToeFragment extends Fragment {
 
@@ -187,8 +187,8 @@ public class TicTacToeFragment extends Fragment {
         else if (mTicTacToe.isFinished() == TicTacToeStates.O)
             winner = mNames[1];
         if (mTicTacToe.isFinished() != TicTacToeStates.EMPTY) {
-            Toast.makeText(getActivity(), (String.format("%s%s", winner
-                    , getString(R.string.winner_call))), Toast.LENGTH_LONG).show();
+            Snackbar.make(getView(), (String.format("%s%s", winner
+                    , getString(R.string.winner_call))), Snackbar.LENGTH_LONG).show();
             whoIsTheWinner(mTicTacToe.isFinished());
             mTurnIndex = 0;
             mShowFinishedDetails = true;
@@ -199,7 +199,7 @@ public class TicTacToeFragment extends Fragment {
 
     private void checkIsFull() {
         if (mTicTacToe.isFull() && mTicTacToe.isFinished() == TicTacToeStates.EMPTY) {
-            Toast.makeText(getActivity(), getString(R.string.draw), Toast.LENGTH_LONG).show();
+            Snackbar.make(getView(),  getString(R.string.draw), Snackbar.LENGTH_LONG).show();
             buttonsEnabled(false);
             mTurnIndex = 0;
             mShowFinishedDetails = true;
