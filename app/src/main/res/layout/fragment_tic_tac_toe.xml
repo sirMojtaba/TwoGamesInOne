@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/tic_tac_toe_gradient"
     tools:context=".fragments.TicTacToeFragment">
 
     <LinearLayout
@@ -71,19 +72,19 @@
                 android:id="@+id/button_one"
                 android:layout_width="104dp"
                 android:layout_height="104dp"
-                android:textSize="40sp"/>
+                android:textSize="40sp" />
 
             <Button
                 android:id="@+id/button_two"
                 android:layout_width="104dp"
                 android:layout_height="104dp"
-                android:textSize="40sp"/>
+                android:textSize="40sp" />
 
             <Button
                 android:id="@+id/button_three"
                 android:layout_width="104dp"
                 android:layout_height="104dp"
-                android:textSize="40sp"/>
+                android:textSize="40sp" />
         </TableRow>
 
         <TableRow
@@ -94,19 +95,19 @@
                 android:id="@+id/button_four"
                 android:layout_width="104dp"
                 android:layout_height="104dp"
-                android:textSize="40sp"/>
+                android:textSize="40sp" />
 
             <Button
                 android:id="@+id/button_five"
                 android:layout_width="104dp"
                 android:layout_height="104dp"
-                android:textSize="40sp"/>
+                android:textSize="40sp" />
 
             <Button
                 android:id="@+id/button_six"
                 android:layout_width="104dp"
                 android:layout_height="104dp"
-                android:textSize="40sp"/>
+                android:textSize="40sp" />
         </TableRow>
 
         <TableRow
@@ -117,19 +118,19 @@
                 android:id="@+id/button_seven"
                 android:layout_width="104dp"
                 android:layout_height="104dp"
-                android:textSize="40sp"/>
+                android:textSize="40sp" />
 
             <Button
                 android:id="@+id/button_eight"
                 android:layout_width="104dp"
                 android:layout_height="104dp"
-                android:textSize="40sp"/>
+                android:textSize="40sp" />
 
             <Button
                 android:id="@+id/button_nine"
                 android:layout_width="104dp"
                 android:layout_height="104dp"
-                android:textSize="40sp"/>
+                android:textSize="40sp" />
         </TableRow>
 
     </TableLayout>

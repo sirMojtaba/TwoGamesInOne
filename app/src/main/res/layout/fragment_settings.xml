@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginTop="160dp"
+    android:background="@drawable/settings_gradient"
     android:orientation="vertical"
     tools:context="fragments.SettingsFragment">
 
@@ -45,24 +46,24 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:autofillHints=""
             android:ems="10"
             android:hint="@string/player_1"
             android:inputType="textPersonName"
             android:textAlignment="center"
-            android:textSize="24sp"
-            android:autofillHints="" />
+            android:textSize="24sp" />
 
         <EditText
             android:id="@+id/edit_text_second_player"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:autofillHints=""
             android:ems="10"
             android:hint="@string/player_2"
             android:inputType="textPersonName"
             android:textAlignment="center"
-            android:textSize="24sp"
-            android:autofillHints="" />
+            android:textSize="24sp" />
     </LinearLayout>
 
     <Switch
